@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--metastags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/262816.ico" type="image/x-icon">
+    
+    
+    <!--titulo-->
+    <title>calculator basic</title>
+</head>
+<body>
+    <div class="error_fundo"></div>
+    
+    <div class="header">
+        <div class="container">
+            <div class="logo">CALCULATOR</div>
+        </div><!--container-->
+    </div><!--header-->
+
+    <div class="calcular">
+        <div class="container">
+            <input id="calculate" type="button" value="Open Calculator">
+        </div>
+    </div>
+
+
+
+  
+            <div class="calculo">
+                <form id="frm" action="">
+                <input id="clear" type="reset" value="Clear">
+                <div class="fechar"><span>X</span></div>
+                <p>Write the numbers to be calculated</p>
+                <input  type="text" id="n1" >
+                <input  type="text" id="n2" >
+                <input id="simbol" type="button" value="+" onClick="calc(this)">
+            <input id="simbol1" type="button" value="-" onClick="calc(this)">
+            <input id="simbol2" type="button" value="*" onClick="calc(this)">
+            <input id="simbol3" type="button" value="/" onClick="calc(this)">
+               
+                <span id="resultado" ></span>
+            </form>
+                
+            </div>
+
+            <div class="error">
+                <div class="fechar1"><span class="x">X</span></div>
+                <h1>ERROR</h1>
+                <p>All fields must be filled in</p>
+                <p>(Todos os campos devem ser preenchidos)</p>
+            </div>
+
+
+            <div class="divulgacao">
+                <h3>CEO / Developer</h3>
+                <h4>Deivid Lima</h4>
+                <a href="https://www.instagram.com/deividx_ofc" target="_blank"><img src="img/Media-Social-Instagram-PNG-1024x993-1.png" alt="instagram"> <span class="inst">Instagram</span></a>
+            </div>
+
+
+
+<div class="idioma">
+    <h2>Idioma:</h2>
+    <div class="portugues">
+        <input type="button" id="trocar_idioma" value="Português">
+        <div class="opcoes">
+            <span class="opcao">English</span>
+        </div>
+    </div>
+    
+
+    <div class="english">
+        <input type="button" id="trocar_idioma2" value="English">
+        <div class="opcoes2">
+            <span class="opcao1">Português</span>
+        </div>
+    </div>
+    
+ 
+</div>
+
+            <!--scripts-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="JS/script.js"></script>            
+</body>
+</html>
